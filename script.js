@@ -1,7 +1,9 @@
 function addTodo() {
-    const newTodoText = document.getElementById("todoInput").innerText;
+    const newTodoText = document.getElementById("todoInput").value;
     const todoList = document.getElementById("todoList");
     const todoNode = document.createElement("div");
-    todoNode.append(newTodoText);
-    todoList.append(todoNode);
+    if (newTodoText.trim()) {
+        todoNode.append(newTodoText);
+        todoList.append(todoNode);
+    }
 }
