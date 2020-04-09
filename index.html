@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo App</title>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -14,9 +14,9 @@
     </div>
     <div id="main">
         <div id="insert">
-            <form name="insertForm">
+            <form action="" name="insertForm" onsubmit="return false;">
                 <input type="text" id="todoInput" placeholder="新しいToDo">
-                <button onclick="addTodo">追加</button>
+                <input type="submit" value="追加" onclick="addTodo();">
             </form>
         </div>
         <div id="todoList"> </div>

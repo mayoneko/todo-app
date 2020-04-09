@@ -3,7 +3,7 @@ function addTodo() {
     const todoList = document.getElementById("todoList");
     const todoNode = document.createElement("div");
     if (newTodoText.trim()) {
-        todoNode.append(newTodoText);
+        todoNode.innerText = newTodoText;
         todoList.append(todoNode);
     }
 }
